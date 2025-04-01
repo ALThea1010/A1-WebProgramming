@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set up page settings (character encoding, viewport, etc.) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Google font for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Bytesized&display=swap" rel="stylesheet">
+    
+    <!-- Link to custom CSS file for styles -->
+    <link href="HarryStyles.css" rel="stylesheet">
+    
+    <!-- Title of the webpage -->
+    <title>Sound Board</title>
+</head>
+<body>
+
+    <!-- Section for the soundboard buttons -->
+    <div class="board">
+        <!-- Each sound has a box with a label and audio player -->
+        <div class="box"><p>ah-ha</p> 
+            <audio class="sound" src="ah-ha.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>back-of-the-net</p> 
+            <audio class="sound" src="back-of-the-net.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>bang-out-of-order</p> 
+            <audio class="sound" src="bangoutoforder.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>Dan</p> 
+            <audio class="sound" src="dan.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>EmailOfTheEvening</p> 
+            <audio class="sound" src="emailoftheevening.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>HelloPartridge</p> 
+            <audio class="sound" src="hellopartridge.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>IAteAScotchEgg</p> 
+            <audio class="sound" src="iateascotchegg.mp3"></audio>
+        </div>
+        
+        <div class="box"><p>ImConfused</p> 
+            <audio class="sound" src="imconfused.mp3"></audio>
+        </div>
+    </div>
+
+    <!-- Section for text-to-speech -->
+    <div class="container">
+        <!-- Title for text-to-speech section -->
+        <h1>Convert Text to Speech</h1>
+        
+        <!-- Short instruction for the user -->
+        <p>Type the text here</p>
+
+        <!-- Text box for typing the text to convert to speech -->
+        <textarea id="text" placeholder="Type text.."></textarea>
+
+        <!-- Controls: language select and buttons for play/stop -->
+        <div class="controls">
+            <!-- Dropdown for selecting the language -->
+            <select id="language">
+                <option value="ar-SA">Arabic</option>
+                <option value="en-US">English</option>
+            </select>
+
+            <!-- Button to play the typed text -->
+            <button onclick="speakText()">PLAY</button>
+            
+            <!-- Button to stop the speech -->
+            <button onclick="stopSpeech()" id="stopButton">STOP!</button>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript file that handles functionality -->
+    <script src="Javaby.js"></script>
+</body>
+</html>
