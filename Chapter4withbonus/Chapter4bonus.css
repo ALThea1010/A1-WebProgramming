@@ -1,0 +1,105 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; /* Light pink background */
+}
+
+/* Header styles */
+header {
+    background-color: #ff69b4; /* Hot pink */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ff1493; /* Deep pink border */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the main content */
+}
+
+.calendar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add space between columns */
+}
+
+.day {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive columns */
+    background-color: #ffe4e1; /* Light pink */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #ff1493; /* Deep pink border */
+    min-width: 250px; /* Minimum width for smaller screens */
+    position: relative;
+}
+
+.day::before {
+    content: '★';
+    font-size: 24px;
+    color: #ffd700; /* Yellow star */
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.day::after {
+    content: '♥';
+    font-size: 24px;
+    color: #ff69b4; /* Hot pink heart */
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff69b4; /* Hot pink */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff1493; /* Deep pink */
+}
+
+/* Footer styles */
+footer {
+    background-color: #ff69b4; /* Hot pink */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    border-top: 5px solid #ff1493; /* Deep pink border */
+}
