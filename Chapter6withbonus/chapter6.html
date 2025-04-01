@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petrol Calculator</title>
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="Petrolstylesheet.css"> <!-- Make sure the CSS file path is correct -->
+</head>
+<body id="BG">
+  <div id="Wrap">
+    <!-- Logo at the top -->
+    <div id="logo">
+      <img src="1200x630wa.png" alt="Logo" />
+    </div>
+    
+    <h1>Petrol Calculator</h1>
+    
+    <!-- Input fields for cost per liter and liters purchased -->
+    <div id="box">
+      <label for="fuelPrice">Cost of Petrol per Liter ($):</label><br>
+      <input type="number" id="fuelPrice" value="1.72" step="0.01" /><br>
+
+      <label for="fuelAmount">Number of Liters Purchased:</label><br>
+      <input type="number" id="fuelAmount" value="0" step="0.1" /><br>
+    </div>
+    
+    <!-- Button to calculate total cost -->
+    <div id="Kolmas">
+      <button type="button" onClick="calculateTotal()" id="submit">Calculate</button>
+    </div>
+    
+    <!-- Display result here -->
+    <p id="answer"></p>
+  </div>
+  
+  <script src="PetrolJava.js"></script> <!-- Make sure the script.js file path is correct -->
+</body>
+</html>

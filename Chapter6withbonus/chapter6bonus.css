@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-top: 20px;
+    color: #ff69b4; /* Hot pink text */
+}
+
+/* Main content styles */
+main {
+    background-color: #fffaf0; /* Floral white background */
+    padding: 15px; /* Reduced padding */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ff69b4; /* Hot pink border */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    max-width: 600px; /* Set a maximum width */
+    width: 100%; /* Ensure it takes full width up to the max-width */
+    position: relative; /* For positioning ribbons */
+}
+
+.ribbon {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: #ff69b4; /* Hot pink */
+    top: -10px;
+    left: -10px;
+    transform: rotate(-45deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: #ff69b4; /* Hot pink */
+    top: 0;
+    left: 100px;
+    transform: rotate(90deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rgb-value {
+    font-size: 1.6em; /* Slightly smaller font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #ff69b4; /* Hot pink text */
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced gap for more compact layout */
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+.color-option {
+    width: 80px; /* Smaller size */
+    height: 80px; /* Smaller size */
+    border-radius: 50%; /* Circular options */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#message {
+    font-size: 1.2em; /* Slightly smaller font size */
+    margin-bottom: 10px; /* Reduced margin */
+    color: #ff69b4; /* Hot pink text */
+}
+
+#score, #lives {
+    margin: 5px 0;
+    color: #ff69b4; /* Hot pink text */
+}
+
+#reset {
+    padding: 8px 16px; /* Reduced padding */
+    background-color: #ff69b4; /* Hot pink button */
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* More rounded button */
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#reset:hover {
+    background-color: #ff1493; /* Deep pink */
+    transform: scale(1.05);
+}
+
+/* Party popper effect */
+@keyframes popper {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(0); }
+}
+
+.popper {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    animation: popper 0.5s ease-out forwards;
+}
