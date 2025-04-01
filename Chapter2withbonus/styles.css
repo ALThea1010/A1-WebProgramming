@@ -1,0 +1,198 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('home2.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    color: #ffffff; /* Change this to your desired color */
+}
+
+nav {
+    background-color: hsla(0, 0%, 20%, 1.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: -40px; /* Lower the button to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}0%);
+    color: #fff;
+    padding: 1px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid transparent; /* Make borders transparent */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('home2.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+}
+
+nav {
+    background-color: hsl(0, 0%, 20%, 20%);
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: -20px; /* Lower the button further */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}); /* Slightly transparent background */
+}
+
+
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px; /* Position the button lower */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button:hover {
+    background-color: #0056b3;
+}nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    width: 50px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and the next item */
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+blockquote {
+    font-style: italic;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.star-rating {
+    font-size: 1.5rem; /* Adjust the size of the stars */
+    color: #FFD700; /* Gold color for stars */
+}
+
+h6 {
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    line-height: 1.4; /* Improve readability with line height */
+    margin: 10px 0; /* Add some margin for spacing */
+    padding: 10px; /* Add padding for better text containment */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a background for contrast */
+    border-radius: 5px; /*Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Add a subtle shadow */
+    max-width: 100%; /* Ensure it fits within the container */
+    overflow-wrap: break-word; /* Ensure long words break to fit */
+}
