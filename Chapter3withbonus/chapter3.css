@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    font-family: 'Times New Roman', serif; /* Use a more classic font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f1ea; /* Light parchment-like background */
+    text-align: center;
+}
+
+header {
+    background-color: #2c2c2c; /* Darker gray for a more classic look */
+    color: #fff; /* White text */
+    padding: 15px 0;
+    font-size: 1.8em; /* Larger font size for a classic look */
+    letter-spacing: 3px; /* Add more spacing for a vintage feel */
+    border-bottom: 3px solid #d3d3d3; /* Add a subtle border for texture */
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive; /* Handwritten cursive font */
+    font-size: 3em; /* Larger font size for emphasis */
+    color: #fff; /* White text for contrast */
+    margin: 0; /* Remove default margin */
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 30px; /* More space between images */
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #f9f6f1; /* Very light beige for a vintage paper look */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    position: relative; /* For positioning tape */
+    display: inline-block; /* Ensure section wraps tightly around the image */
+    border: 1px solid #d3d3d3; /* Subtle border for a framed look */
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for a vintage photo effect */
+    filter: sepia(30%) contrast(110%) brightness(95%) saturate(130%); /* Add color with sepia and saturation */
+    transition: filter 0.3s;
+    display: block; /* Ensure image is a block element */
+}
+
+img:hover {
+    filter: sepia(20%) contrast(120%) brightness(105%) saturate(150%); /* Enhance color on hover */
+}
+
+section::before,
+section::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 12px;
+    background-color: #c0c0c0; /* Slightly darker gray tape color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+section::before {
+    top: 8px; /* Adjusted to align with the top of the image */
+    left: 8px; /* Adjusted to align with the left of the image */
+    transform: rotate(-25deg);
+}
+
+section::after {
+    top: 8px; /* Adjusted to align with the top of the image */
+    right: 8px; /* Adjusted to align with the right of the image */
+    transform: rotate(25deg);
+}
+
+p {
+    font-family: 'Great Vibes', cursive; /* Handwritten cursive font */
+    font-size: 1.4em; /* Slightly larger font size for readability */
+    color: #4a4a4a; /* Darker gray text for a vintage feel */
+    font-style: italic; /* Italic text for a classic look */
+    margin: 15px 0;
+}
